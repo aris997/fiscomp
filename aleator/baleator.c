@@ -21,7 +21,7 @@ typedef struct dim{
 
 struct dim init();
 
-int main () {
+int main(){
   register int i;
   int k;
 
@@ -50,10 +50,10 @@ int main () {
       ran = (a*ran)%m;
       r = (double)ran*inv;
 
-      if (r<0.25) { p.x+=A; }
-      else if (r<0.5) { p.y+=A; }
-      else if (r<0.75) { p.x-=A; }
-      else { p.y-=A; }
+      if (r<0.25)       { p.x+=A; }
+      else if (r<0.5)   { p.y+=A; }
+      else if (r<0.75)  { p.x-=A; }
+      else              { p.y-=A; }
 
       somme[k].x += p.x;
       somme[k].y += p.y;
